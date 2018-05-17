@@ -42,6 +42,7 @@ def mse(y, pred):
     return np.mean(np.square(y - pred))
 
 
+# Using scikit-learn's breast cancer dataset: classifying cell features as malignant or benign
 bc = datasets.load_breast_cancer()
 
 x = bc['data']  # array of features with shape: (n_samples, n_features)
